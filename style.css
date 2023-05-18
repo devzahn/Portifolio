@@ -70,6 +70,7 @@ body{
     width: 100%;
 }
 .text{
+    width: 100%;
     height: 100%;
     display: flex;
     margin: 4em 0em 1em 0em;
@@ -80,6 +81,17 @@ body{
 }
 .about-me-img{
     order: 1;
+    height: auto;
+    max-width: 100%;
+}
+.about-me-img img{
+    height: auto;
+    max-width: 100%;
+}
+@media (max-width: 900px) {
+    .about-me-img{
+        display: none;
+    }
 }
 .about-me{
     display: flex;
@@ -95,21 +107,25 @@ body{
     font-size: 1em;
     color: rgb(255, 255, 255);
 }
-
-#social{
+.social{
     height: 100%;
     width: 100%;
+    background-color: rgb(29, 29, 27);
+}
+#social-section{
+/*     height: auto;
+    width: 100%; */
     display: flex;
     margin: 4em 0em 1em 0em;
     justify-content: center;
     position: relative;
     padding: 80 0 20 0;
-    background-color: rgb(29, 29, 27);
 }
 .center-contaier{
     position: relative;
-    height: 50em;
-    width: 100em;
+    height: auto;
+    width: 100%;
+    max-width: 100em;
 }
 #center-contaier-text{
     margin: 0 0 2em 0;
@@ -132,13 +148,17 @@ body{
 }
 #center-contaier-text-two h2{
     margin-top: 1em;
+    color: rgb(255, 255, 255);
 }
 .symbol{
+    max-width: 100%;
+    height: auto;
     display: flex;
-    gap: 17em;
+    gap: 1em;
     justify-content: center;
+    flex-wrap:wrap;
 }
-.symbol-html{
+.symbol div{
     display: flex;
     height: 6em;
     width: 15em;
@@ -148,6 +168,7 @@ body{
     justify-content: space-evenly;
     padding: 10px;
 }
+
 .symbol-html p{
     order: 1;
     display: flex;
@@ -155,16 +176,7 @@ body{
     font-size: 1.5em;
     color: rgb(255, 255, 255);
 }
-.symbol-css{
-    height: 6em;
-    width: 15em;
-    display: flex;
-    border: solid rgb(60, 60, 59);
-    background-color: rgb(29, 29, 27);
-    border-radius: 1em;
-    justify-content: space-evenly;
-    padding: 10px;
-}
+
 .symbol-css p{
     order: 1;
     display: flex;
@@ -172,16 +184,7 @@ body{
     font-size: 1.5em;
     color: rgb(255, 255, 255);
 }
-.symbol-js{
-    height: 6em;
-    width: 15em;
-    display: flex;
-    border: solid rgb(60, 60, 59);
-    background-color: rgb(29, 29, 27);
-    border-radius: 1em;
-    justify-content: space-evenly;
-    padding: 10px;
-}
+
 .symbol-js p{
     order: 1;
     display: flex;
@@ -189,3 +192,142 @@ body{
     font-size: 1.5em;
     color: rgb(255, 255, 255);
 }
+.symbol-ts p{
+    order: 1;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+.symbol-node p{
+    order: 1;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+.symbol-php p{
+    order: 1;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+.symbol-databases{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.text-databases{
+    margin-top: 1em;
+    color: rgb(255, 255, 255);
+}
+.symbol-databases div{
+    display: flex;
+    width: 100%;
+    height: 6em;
+    max-width: 15em;
+    max-height: 6em;
+    border: solid rgb(60, 60, 59);
+    background-color: rgb(29, 29, 27);
+    border-radius: 1em;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.symbol-git p{
+    order: 1;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+.symbol-mysql p{
+    order: 1;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+.symbol-mdb p{
+    order: 1;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+.container-card {
+    position: relative;
+    width: 100%;
+    max-width: 80em;
+    top: 75px;
+ /*    left: calc(50% - 25%); */
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 900px) {
+    .container-card{
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        transition: none;
+        margin: 0;
+    }
+    .card{
+        height: auto;
+        max-width: 100%;
+        transition: none;
+        justify-content: center;
+        display: flex; 
+}
+}
+
+.section-projects{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(47, 47, 47);
+}
+.text-card{
+    padding-top: 4em;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    max-width: 80em;
+    position: relative;
+    display: flex;
+    color: rgb(255, 255, 255);    
+}
+.card {
+    display: flex;
+    height: 40em;
+    width: 80em;
+    background-color: rgb(41, 171, 226);
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #0003;
+    margin-left: -50px;
+    transition: 0.4s ease-out;
+    position: relative;
+}
+  
+.card:not(:first-child) {
+      margin-left: -50px;
+}
+.card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
+.card:hover ~ .card {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+}
+.title-card {
+    color: #666666;
+    font-weight: 500;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+  }

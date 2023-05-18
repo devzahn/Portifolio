@@ -4,28 +4,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
     <title>My social media links</title>
 </head>
 <body>
         <header id="header-section">
             <div class="logo">
                 <h2>
-                   <a href="home"> &lt;Devzahn/&gt;</a>
+                   <a href="#home"> &lt;Devzahn/&gt;</a>
                 </h2>
             </div>    
             <div class="navegation">    
                 <nav>
-                    <a href="#">Home</a>
-                    <a href="#social">About</a>
-                    <a href="#">Projects</a>
+                    <a href="#home">Home</a>
+                    <a href="#social-section">About</a>
+                    <a href="#projects">Projects</a>
                     <a href="#contact-section">Contact</a>
                 </nav>
             </div>    
         </header>
 <main>
     <div id="main-div">
-        <section class="text">
+        <section id="home" class="text">
             <div class="about-me-img">
                 <img src="assets/logo.svg">
             </div>       
@@ -36,8 +35,8 @@
                 </div>  
             </div>                   
         </section>
-
-        <section id="social" class="main-contaier"> 
+    <div class="social">
+        <section id="social-section" class="main-contaier"> 
             <contaier class="center-contaier">   
                 <div id="center-contaier-text">
                     <h1>A bit about me</h1>
@@ -60,18 +59,38 @@
                         <p>JavaScript</p> 
                         <img src="assets/simbolo-js.svg" alt="">
                     </div>
+                    <div class="symbol-ts">
+                        <p>TypeScript</p> 
+                        <img src="assets/simbolo-ts.svg" alt="">
+                    </div>
+                    <div class="symbol-node"> 
+                        <p>Node JS</p>
+                        <img src="assets/simbolo-node.svg" alt="">
+                    </div>
+                    <div class="symbol-php"> 
+                        <p>PHP</p>
+                        <img src="assets/simbolo-php.svg" alt="">
+                    </div>
                 </div>
-                <div class="project-four"> 
-                    <img src="assets/image/nodejs.svg" alt="">
+                <div class="text-databases">
+                    <h1>Databases;</h1>
                 </div>
-                <div class="project-five"> 
-                    <img src="assets/image/react.svg" alt="">
-                </div>
-                <div class="project-six">
-                    <img src="assets/image/java.svg" alt="">
-                </div>
-                <div class="project-seven">
-                    <img src="assets/image/python.svg" alt="">
+                <div class="symbol-databases">
+                    <div class="symbol-mysql">
+                        <p>MySql</p>
+                        <img src="assets/simbolo-mysql.svg" alt="">
+                    </div>
+                    <div class="symbol-mdb">
+                        <p>Mongo DB</p>
+                        <img src="assets/simbolo-Mdb.svg">
+                    </div>
+                    <div class="symbol-git"> 
+                        <p>Git</p>
+                        <img src="assets/simbolo-git.svg" alt="">
+                    </div>
+
+
+
                 </div>
                 <div class="project-eight">
                     <img src="assets/image/c#.svg" alt="">
@@ -81,7 +100,39 @@
                 </div>
             </contaier> 
         </section>
-        
+    </div>
+    <section id="projects" class="section-projects">
+        <div class="text-card">
+            <h1>Projects;</h1>
+        </div>
+        <div class="container-card">
+
+            <div class="card">
+          
+              <h3 class="title-card">Card 1</h3>
+          
+            </div>
+          
+            <div class="card">
+          
+              <h3 class="title-card">Card 2</h3>
+          
+            </div>
+          
+            <div class="card">
+          
+              <h3 class="title-card">Card 3</h3>
+          
+            </div>
+          
+            <div class="card">
+          
+              <h3 class="title-card">Card 4</h3>
+          
+            </div>
+          
+            </div>
+    </section>
         <section id="contact-section">
             <div id="contact-me">
                 <form action="" id="contact-form">
