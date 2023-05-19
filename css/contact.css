@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Open+Sans&family=Roboto+Mono:wght@200&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Climate Crisis', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+#contact-section{
+    padding-top: 50;
+    height: 90em;
+    width: 100%;
+    position: relative;
+}
+#contact-form{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#contact-title{
+    background-color: transparent;
+    color: azure;
+    position: relative;
+    height: 2em;
+    width: 7em;
+    font-size: 2em;
+    padding: 0.5em 0 2em 42.5%;
+    display: flex;
+}
+.contact-text {
+    background-color: transparent;
+    display: flex;
+    align-items: flex-start;
+    margin: 6% 2% 0 42.5%;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+}
+.contact-text h3 {
+    padding-top: 1em;
+}
+#contact-me {
+    background-color: transparent; /* Mudar para tranparent */
+    backdrop-filter: blur(500px);
+    border-radius: 2px;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items:baseline ;
+    padding-top: 1em;
+}
+
+.contact-name{
+    height: 20%;
+    width: 40em;
+    background-color: transparent;
+    border-radius: 2px;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    margin: -6em 0 0 1em;
+}
+.contact-mail {
+    height: 30%;
+    width: 45em;
+    background-color: transparent;
+    border-radius: 2px;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 1em;
+}
+.contact-message {
+    height: 40%;
+    width: 45em;
+    background-color: transparent;
+    border-radius: 2px;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    margin: -3em 0 0 1em;
+}
+.contact-name .label-name {
+    color: azure;
+    padding-bottom: 15px;
+    font-size: 0.em;
+}
+.contact-mail .label-email {
+    color: azure;
+    padding-bottom: 15px;
+    font-size: 0.9em;
+}
+.contact-message .label-message {
+    color: azure;
+    padding-bottom: 15px;
+    font-size: 0.9em;
+}
+.dev-contact-button{
+    margin: -8% 0% 0% 34%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.dev-contact-button .contact-button {
+    background-color:transparent;
+    width: 6em;
+    height: 3em;
+    justify-content: center;
+    color: azure;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    font-size: 0.8em;
+    transition: .18s;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+}
+
+#contact-information{
+    background-color: transparent;
+    display: flex;
+    align-items: flex-end;
+    margin: -17% 3% 0 75%;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+}
+#contact-information a{
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+}
+#contact-information .contact-information-email {
+    background-color: transparent;
+    color: azure;
+    font-size: 1.5em;
+    margin-left: 9em;
+}
+#contact-information .contact-information-address {
+    background-color: transparent;
+    color: azure;
+    font-size: 1.5em;
+    margin-left: 9em;
+    padding-top: 20px;
+}
+.contact-information-media {
+    background-color: transparent;
+    height: 3em;
+    width: 12em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    margin-top: 18em;
+}
+.contact-information-media-img1 { 
+    height: 3em;
+    width: 3px;
+    background-color: transparent;
+    display: flex;
+    padding: 0 3em 0 0 ;
+}
+.contact-information-media-img2 { 
+    height: 3em;
+    width: 3px;
+    background-color: transparent;
+    display: flex;
+    padding: 0 3em 0 0 ;
+}
+.contact-information-media-img3 { 
+    height: 3em;
+    width: 3px;
+    background-color: transparent;
+    display: flex;
+    padding: 0 3em 0 0 ;
+}
+
+#contact-me .contact-button:hover{
+    background-color: #FFF;
+    color: black;
+}
+.contact-name #name{
+    height: 40%;
+    padding: 1vh;
+    width: 40em;
+    background-color: transparent;
+    border-radius: 2px;
+    border: 2px solid #fff;
+    font-size: 0.7em;
+}
+.contact-mail #email{
+    height: 30%;
+    padding: 2vh;
+    width: 40em;
+    background-color: transparent;
+    border-radius: 2px;
+    border: 2px solid #fff;
+    font-size: 0.7em;
+}
+.contact-message #message{
+    height: 40%;
+    padding: 2vh;
+    width: 40em;
+    background-color: transparent;
+    border-radius: 2px;
+    border: 2px solid #fff;
+    font-size: 0.7em;
+}
+.contact-address-email{
+    height: 20%;
+    width: 40em;
+    background-color: transparent;
+    border-radius: 2px;
+    font-size: 1.2em;
+    display: flex;
+    padding: 2em 1em;
+}
