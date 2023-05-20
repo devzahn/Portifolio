@@ -9,6 +9,10 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto Mono', monospace;
 }
+a{
+  text-decoration: none !important;
+
+}
 .container-card {
     position: relative;
     width: 100%;
@@ -86,5 +90,9 @@
     position: absolute;
     left: 20px;
     top: 15px;
+  }
+  .card div{
+    position: relative;
+    top: 37em;
   }
   

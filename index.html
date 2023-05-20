@@ -3,14 +3,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
-    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+   <!--  <link rel="stylesheet" href="css/contact.css"> -->
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/style.css">
     <title>My social media links</title>
 </head>
 <body>
         <header id="header-section">
-            <div class="logo">
+<!--             <div class="logo">
                 <h2>
                    <a href="#home"> &lt;Devzahn/&gt;</a>
                 </h2>
@@ -22,7 +23,27 @@
                     <a href="#projects">Projects</a>
                     <a href="#contact-section">Contact</a>
                 </nav>
-            </div>    
+            </div>   --> 
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand text-light" href="#home">DevZahn</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarText">
+                    <span class="navbar-text">                        
+                        <div class="navegation">    
+                            <nav>
+                                <a href="#home">Home</a>
+                                <a href="#social-section">About</a>
+                                <a href="#projects">Projects</a>
+                                <a href="#contact-section">Contact</a>
+                            </nav>
+                        </div>
+                    </span>
+                  </div>
+                </div>
+              </nav>
         </header>
 <main>
     <div id="main-div">
@@ -112,28 +133,60 @@
             <div class="card">
           
               <h3 class="title-card">Card 1</h3>
-          
+              <div class="btn-group" role="group" aria-label="Basic outlined example">
+                <button type="button" class="btn btn-outline-dark">
+                    <a href="#" class="text-light">To view</a>
+                </button>
+                <button type="button" class="btn btn-outline-dark">
+                    <a href="#" class="text-light">Repository</a>
+                </button>
+              </div>
             </div>
           
             <div class="card">
           
               <h3 class="title-card">Card 2</h3>
-          
+              <div class="btn-group" role="group" aria-label="Basic outlined example">
+                <button type="button" class="btn btn-outline-dark">
+                    <a href="#" class="text-light">To view</a>
+                </button>
+                <button type="button" class="btn btn-outline-dark">
+                    <a href="#" class="text-light">Repository</a>
+                </button>
+              </div>
             </div>
           
             <div class="card">
           
               <h3 class="title-card">Card 3</h3>
-          
+              <div class="btn-group" role="group" aria-label="Basic outlined example">
+                <button type="button" class="btn btn-outline-dark">
+                    <a href="#" class="text-light">To view</a>
+                </button>
+                <button type="button" class="btn btn-outline-dark">
+                    <a href="#" class="text-light">Repository</a>
+                </button>
+              </div>
             </div>
           
             <div class="card">
           
               <h3 class="title-card">Card 4</h3>
-          
+              <div class="btn-group" role="group" aria-label="Basic outlined example">
+                <button type="button" class="btn btn-outline-dark">
+                    <a href="#" class="text-light">To view</a>
+                </button>
+                <button type="button" class="btn btn-outline-dark">
+                    <a href="#" class="text-light">Repository</a>
+                </button>
+              </div>
             </div>
           
             </div>
+            
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar overflow-visible text-dark" style="width: 10%">Long label text for the progress bar, set to a dark color</div>
+              </div>
     </section>
         <section id="contact-section">
             <div id="contact-me">
@@ -179,6 +232,7 @@
 <footer>
 
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

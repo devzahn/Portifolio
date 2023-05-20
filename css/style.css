@@ -29,12 +29,11 @@ body {
   height: 4em;
   padding: 0 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   z-index: 99;
   background-color: rgb(29, 29, 27);
 }
-
 #header-section h2 a {
   background-color: transparent;
   color: azure;
