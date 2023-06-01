@@ -2,6 +2,7 @@
 
 
 * {
+    border: 0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,81 +10,50 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto Mono', monospace;
 }
-#contact-section{
-    padding-top: 50;
-    height: 90em;
-    width: 100%;
-    position: relative;
-}
-#contact-form{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
 
 #contact-title{
-    background-color: transparent;
     color: azure;
-    position: relative;
-    height: 2em;
-    width: 7em;
     font-size: 2em;
-    padding: 0.5em 0 2em 42.5%;
     display: flex;
+    justify-content: center;
+}
+#contact-section-text-secundary{
+    background-color: rgb(16, 58, 86);
+    width: auto;
+    height: 50em;
+}
+#contact-py-5{
+    width: auto;
+    height: 40em;
 }
 .contact-text {
-    background-color: transparent;
     display: flex;
-    align-items: flex-start;
-    margin: 6% 2% 0 42.5%;
-    justify-content: center;
-    flex-direction: column;
     color: rgb(255, 255, 255);
+    align-items: center;
+    flex-direction: column;
 }
 .contact-text h3 {
-    padding-top: 1em;
-}
-#contact-me {
-    background-color: transparent; /* Mudar para tranparent */
-    backdrop-filter: blur(500px);
-    border-radius: 2px;
-    height: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items:baseline ;
-    padding-top: 1em;
+    padding-top: 2em;
 }
 
-.contact-name{
-    height: 20%;
-    width: 40em;
-    background-color: transparent;
-    border-radius: 2px;
-    font-size: 1.2em;
-    display: flex;
-    flex-direction: column;
-    margin: -6em 0 0 1em;
+#contact-information{
+    max-width: 100%;
+    color: rgb(255, 255, 255);
+
 }
-.contact-mail {
-    height: 30%;
-    width: 45em;
-    background-color: transparent;
-    border-radius: 2px;
-    font-size: 1.2em;
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 0 1em;
+.block-information{
+    word-wrap: break-word;
+    display: block;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-self: flex-start;
 }
-.contact-message {
-    height: 40%;
-    width: 45em;
-    background-color: transparent;
-    border-radius: 2px;
-    font-size: 1.2em;
+#contact-box{
     display: flex;
     flex-direction: column;
-    margin: -3em 0 0 1em;
+    gap: 2em;
+    justify-content: flex-start;
+    position: relative;
 }
 .contact-name .label-name {
     color: azure;
@@ -119,64 +89,6 @@
     font-weight: 500;
     cursor: pointer;
     outline: none;
-}
-
-#contact-information{
-    background-color: transparent;
-    display: flex;
-    align-items: flex-end;
-    margin: -17% 3% 0 75%;
-    justify-content: center;
-    flex-direction: column;
-    color: rgb(255, 255, 255);
-}
-#contact-information a{
-    color: rgb(255, 255, 255);
-    font-size: 1em;
-}
-#contact-information .contact-information-email {
-    background-color: transparent;
-    color: azure;
-    font-size: 1.5em;
-    margin-left: 9em;
-}
-#contact-information .contact-information-address {
-    background-color: transparent;
-    color: azure;
-    font-size: 1.5em;
-    margin-left: 9em;
-    padding-top: 20px;
-}
-.contact-information-media {
-    background-color: transparent;
-    height: 3em;
-    width: 12em;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    position: absolute;
-    margin-top: 18em;
-}
-.contact-information-media-img1 { 
-    height: 3em;
-    width: 3px;
-    background-color: transparent;
-    display: flex;
-    padding: 0 3em 0 0 ;
-}
-.contact-information-media-img2 { 
-    height: 3em;
-    width: 3px;
-    background-color: transparent;
-    display: flex;
-    padding: 0 3em 0 0 ;
-}
-.contact-information-media-img3 { 
-    height: 3em;
-    width: 3px;
-    background-color: transparent;
-    display: flex;
-    padding: 0 3em 0 0 ;
 }
 
 #contact-me .contact-button:hover{

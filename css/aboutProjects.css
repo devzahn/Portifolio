@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Open+Sans&family=Roboto+Mono:wght@200&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Climate Crisis', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+#myCarousel{
+  background-color: #599DD0ff;
+}
+#primary-text{
+  display: block;
+  flex-direction: column;
+}
+#icon-grid{
+  color: azure;
+  background-color: rgb(16, 58, 86) ;
+  border-radius: 1rem;
+}
+#hanging-icons{
+  color: azure;
+  background-color: rgb(16, 58, 86) ;
+  border-radius: 1rem;
+}
+#featured-3{
+  color: azure;
+  background-color: #ECEFF1ff;
+}
+#icons-svg {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color:  #60B0DFff;
+  border: 1px solid  black;
+  border-radius: 1em;
+  gap: 1em ;
+  padding: 1em;
+  color: black;
+  width: 22em;
+  height: 5em;
+}
+#block-linguagens{
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+#icons-svg svg{
+  display: flex;
+  width: 2em;
+  height: 2em;
+  border: 2px solid  black;
+  padding: 1px;
+}
