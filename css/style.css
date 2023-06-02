@@ -114,7 +114,8 @@ body {
   padding: 5em 3em;
   max-width: 46rem;
   background-color: transparent;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(200px);
+  border-radius: 1em;
 
 }
 
