@@ -30,7 +30,7 @@
     display: flex;
     color: rgb(255, 255, 255);
     align-items: center;
-    flex-direction: column;
+    padding: 1em;
 }
 .contact-text h3 {
     padding-top: 2em;
@@ -43,10 +43,11 @@
 }
 .block-information{
     word-wrap: break-word;
-    display: block;
-    justify-content: flex-start;
-    flex-direction: row-reverse;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
     align-self: flex-start;
+    
 }
 #contact-box{
     display: flex;
@@ -54,6 +55,11 @@
     gap: 2em;
     justify-content: flex-start;
     position: relative;
+    align-items: center;
+}
+#contact-text-button{
+    display: flex;
+    margin: 1rem 0 0 0;
 }
 .contact-name .label-name {
     color: azure;
