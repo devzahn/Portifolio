@@ -10,7 +10,32 @@
     <title>My social media links</title>
 </head>
 <body>
-        <header id="header-section">
+  <header data-bs-theme="dark">
+    <div class="collapse text-bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4>Contact</h4>
+            <ul class="list-unstyled">
+              <li><a href="https://github.com/devzahn" class="text-white">Like on GitHub</a></li>
+              <li><a href="#contact-section-text-secundary" class="text-white">Email me</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <strong>DevZahn</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>     
+  <!-- <header id="header-section">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                   <a class="navbar-brand text-light" href="#home">DevZahn</a>
@@ -31,9 +56,8 @@
                   </div>
                 </div>
               </nav>
-        </header>
+        </header> -->
 <main>
-    <div id="main-div">
         <section id="home" class="text">
             <div class="about-me-img">
                 <img src="assets/logo.svg">
@@ -45,7 +69,7 @@
                 </div>  
             </div>                   
         </section>
-        <div class="section-main">
+        <div class="section-main" id="section-main">
             <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
                 <symbol id="check2" viewBox="0 0 16 16">
                   <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -251,52 +275,46 @@
             </div>
           
             <div class="b-example-divider"></div>
-            <div class="text-secondary px-4 py-5" id="contact-section-text-secundary">
-              <div class="py-5" id="contact-py-5">
-                          <div id="contact-title">
-                              <h1>Contact</h1>
-                          </div>
-                          <div class="block-information" >
-                          <div class="contact-text">
-                              <h3>If you want to know more about me or my work, or if you would just <br> like to say hello, send me a message.</h3>
-                          </div>
-                          <div class="row g-1 col-6" id="contact-box">
-                            <div class="col-sm-6">
-                              <label for="firstName" class="form-label">Name</label>
-                              <input type="text" class="form-control" id="firstName" placeholder="Name" value="" required>
-                              <div class="invalid-feedback">
-                                Valid first name is required.
-                              </div>
-                            </div>
-                            <div class="col-sm-6">
-                              <label for="email" class="form-label">Email</label>
-                              <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                              <div class="invalid-feedback">
-                                Please enter a valid email address for shipping updates.
-                              </div>
-                            </div>
-                            <div class="col-sm-6" id="contact-box-input-message">
-                              <label for="username" class="form-label">Message</label>
-                              <div class="input-group has-validation">
-                                <input type="text" class="form-control" id="username" placeholder="Text" required>
-                              </div>
-                              <div id="contact-text-button">
-                                <button type="button" class="btn btn-primary">Enviar</button>
-                              </div>
-                            </div>
+<!-- fica aqui --> 
+<div class="text-secondary px-4 py-5" id="contact-section-text-secundary">
+  <h2 class="pb-3 border-bottom text-center">Contact;</h2>
+  <divid="block-linguagens">
+    <div class="block-information d-flex justify-content-center" id="block-information">
+      <div class="contact-text">
+          <h3>If you want to know more about me or my work, or if you would just <br> like to say hello, send me a message.</h3>
+      </div>
+      <div class="row g-1 col-6" id="contact-box">
+        <div class="col-sm-11">
+          <label for="firstName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="firstName" placeholder="Name" value="" required>
+          <div class="invalid-feedback">
+            Valid first name is required.
+          </div>
+        </div>
+        <div class="col-sm-11">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="you@example.com">
+          <div class="invalid-feedback">
+            Please enter a valid email address for shipping updates.
+          </div>
+        </div>
+        <div class="col-sm-11" id="contact-box-input-message">
+          <label for="username" class="form-label">Message</label>
+          <div class="input-group has-validation">
+            <input type="text" class="form-control" id="username" placeholder="Text" required>
+          </div>
+          <div id="contact-text-button">
+            <button type="button" class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
 
-                          </div>
-                          </div>
-                      </div>
-                    </div> 
-                    <div class="container-fluid" id="container-fluid">
-                      <div class="text-footer-a">
-                        <a class="navbar-brand text-light" href="#home">DevZahn</a>
-                      </div>  
-                    </div>
+      </div>
+      </div>
+  </div>
+</div>
+<!-- fica aqui -->
                           </span>
                       </div>
-                    </div>
                   </div> 
               </div>
             </div>

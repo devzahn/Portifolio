@@ -83,12 +83,18 @@ body {
 .text {
   width: auto;
   height: 100%;
+  max-width: 100%;
   display: flex;
   margin: 4em 0 1em;
   align-items: center;
   justify-content: center;
   position: relative;
   padding: 30px 0 20px;
+}
+@media (max-width: 350px){
+  .about-me-img {
+    padding-top: 13rem;
+  }
 }
 
 .about-me-img {
@@ -101,8 +107,7 @@ body {
   height: auto;
   max-width: 100%;
 }
-
-@media (max-width: 900px) {
+@media (max-width: 900px){
   .about-me-img {
     display: none;
   }
@@ -111,12 +116,13 @@ body {
 .about-me {
   display: flex;
   flex-direction: column;
-  padding: 5em 3em;
-  max-width: 46rem;
+  padding: 1rem 1rem;
+  max-width: 100%;
+  height: auto;
+  width: 46rem;
   background-color: transparent;
   backdrop-filter: blur(200px);
   border-radius: 1em;
-
 }
 
 .about-me h1 {

@@ -19,12 +19,20 @@
 }
 #contact-section-text-secundary{
     background-color: rgb(16, 58, 86);
-    width: auto;
-    height: 50em;
 }
+@media (max-width: 900px) {
+    #block-information {
+      display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+  }
 #contact-py-5{
+    max-width: 100%;
+    flex-wrap: wrap;
     width: auto;
-    height: 40em;
+    height: 30em;
+    display: block;
 }
 .contact-text {
     display: flex;
@@ -47,7 +55,6 @@
     justify-content: space-between;
     flex-direction: row;
     align-self: flex-start;
-    
 }
 #contact-box{
     display: flex;
