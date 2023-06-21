@@ -16,6 +16,7 @@
   display: block;
   flex-direction: column;
 }
+
 #icon-grid{
   color: azure;
   background-color: rgb(16, 58, 86) ;
@@ -29,6 +30,12 @@
 #featured-3{
   color: azure;
   background-color: #ECEFF1ff;
+}
+#image-container-project{
+  width: auto;
+  height: 50rem;
+  position: relative;
+  padding-top: 5rem;
 }
 #icons-svg {
   display: flex;
