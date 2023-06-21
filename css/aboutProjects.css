@@ -12,10 +12,16 @@
 #myCarousel{
   background-color: #599DD0ff;
 }
+#myCarousel img{
+  height: auto;
+  max-width: 100%;
+}
+
 #primary-text{
   display: block;
   flex-direction: column;
 }
+
 
 #icon-grid{
   color: azure;
@@ -29,13 +35,15 @@
 }
 #featured-3{
   color: azure;
-  background-color: #ECEFF1ff;
 }
 #image-container-project{
-  width: auto;
+  width: 84rem;
   height: 50rem;
+  height: auto;
+  max-width: 1900px;
   position: relative;
-  padding-top: 5rem;
+  justify-content: center;
+  align-items: center;
 }
 #icons-svg {
   display: flex;
