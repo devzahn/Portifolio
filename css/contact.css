@@ -17,7 +17,7 @@
     display: flex;
     justify-content: center;
 }
-#contact-section-text-secundary{
+#section-contact-text-secundary{
     background-color: rgb(16, 58, 86);
 }
 @media (max-width: 900px) {
