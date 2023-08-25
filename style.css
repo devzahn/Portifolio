@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    max-width: none;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+    background-color: #000;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header h1 {
+    color: #DC5F00;
+    font-size: 2.5rem;
+}
+
+header span {
+    color: #EEEEEE;
+}
+/* lembrar de consertar */
+header .navegacao-navbar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}               
+
+header .navegacao-navbar li a{
+    padding: 20px;
+    color: #EEEEEE;
+    font-size: 1.3rem;
+}
+
+/* SECTION DOWNLOAD CV */
+
+.section-div{
+    animation: inicializar .7s forwards;
+    background-color: #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    padding: 60px;
+}
+
+.section-div div {
+    margin-top: 120px;
+    align-self: start;
+    display: grid;
+    gap: 30px;
+}
+
+.section-div div h2{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    color: #EEEEEE;
+}
+
+.section-div div p{
+    font-family: 'Poppins', monospace;
+    font-weight: 200;
+    color: #EEEEEE;
+}
+
+.section-div div a{
+    justify-self: start ;
+    color: #DC5F00;
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: 2px solid #DC5F00;
+}
+
+.section-div img {
+    max-width: 100%;
+}
+
+.typing::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .8s infinite;
+}
+
+@keyframes pisca {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes inicializar {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: matrix3d(0, 0, 0);
+    }
+}
