@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #000;
+    background-color: #040404;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -17,7 +17,7 @@ body {
 /* HEADER */
 
 header {
-    background-color: #000;
+    background-color: #040404;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -25,7 +25,7 @@ header {
 }
 
 header h1 {
-    color: #DC5F00;
+    color: #D71313;
     font-size: 2.5rem;
     font-family: 'Poppins', sans-serif;
 }
@@ -36,15 +36,32 @@ header span {
 /* lembrar de consertar */
 header .navegacao-navbar {
     display: flex;
-    gap: 10px;
+    gap: 30px;
     align-items: center;
 }               
 
 header .navegacao-navbar li a{
-    padding: 20px;
     color: #EEEEEE;
+    width: 0px;
+    height: 0px;
     font-size: 1.3rem;
     font-family: 'Poppins', monospace;
+}
+
+header .navegacao-navbar li a::after {
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-bottom: 4px solid transparent;
+    display: block;
+    transition: .5s;
+}
+
+header .navegacao-navbar li a:hover::after {
+    width: 100%;
+    height: 0px;
+    padding: 0px;
+    border-bottom: 4px solid #D71313;
 }
 
 
@@ -82,10 +99,10 @@ header .navegacao-navbar li a{
 
 .section-div div a{
     justify-self: start ;
-    color: #DC5F00;
+    color: #EEEEEE;
     padding: 15px 40px;
     border-radius: 5px;
-    border: 2px solid #DC5F00;
+    border: 2px solid #EEEEEE;
 }
 
 .section-div img {
@@ -144,7 +161,7 @@ main .about-section {
 
 .about-title h1 {
     font-size: 2.5rem;
-    color: #DC5F00;
+    color: #D71313;
     margin-bottom: 15px;
     font-family: 'Poppins', monospace;
 }
@@ -167,7 +184,7 @@ main .about-section {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background-color: #DC5F00;
+    background-color: #D71313;
 }
 
 .about-section img{
@@ -205,7 +222,7 @@ main .about-section {
 }
 
 .about-text h1::after {
-    background-color: #DC5F00;
+    background-color: #D71313;
     height: 6px;
     width: 60px;
     margin: 20px 0;
@@ -230,7 +247,7 @@ main .about-section {
 }
 
 .about-info i {
-    color: #DC5F00;
+    color: #D71313;
     display: inline-block;
     padding-right: 15px;
     font-size: 1.5rem;
@@ -268,13 +285,33 @@ main .about-section {
 
 @media ( max-width: 992px) {
     .section-div {
-        background-image: url(img-perfil.jpg);
+        background-image: url(img-perfil1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-    }
+}
+
+header {
+    justify-content: space-between;
+    padding: 30px 70px;
+}
 
 header .navegacao-navbar {
     display: none;
+}
+
+header .navegacao-navbar.ativado {
+    background: linear-gradient(rgba(43,42,42, 0.176), rgba(46,46,46, 0.724));
+    display: grid;
+    position:absolute;
+    top: 80px;
+    color: #EEEEEE;
+    z-index: 5;
+    padding: 30px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 0 0 4px 4px;
+    right: 20px;
+    animation: upSession .8s ease-in-out forwards;
 }
 
 header i {
@@ -293,4 +330,96 @@ header i {
     .about-content{
         grid-column: 1/-1;
     }
+}
+
+/* SECTION SERVICES */
+
+.services {
+    margin-top: -30px;
+    background-color: #151515;
+    padding: 60px;
+}
+
+.my-services{
+    padding: 60px;
+    color: #EEEEEE;
+}
+
+.my-services ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-services ul li {
+    cursor: pointer;
+    border-radius: 6px;
+    position: relative;
+    padding: 10px;
+    display: grid;
+    gap: 30px;
+    text-align: center;
+    max-width: 300px;
+    align-content: center;
+    height: 300px;
+    background-color: #222;
+}
+
+.my-services ul li i {
+    font-size: 2.7rem;
+    color: #D71313 ;
+}
+
+.my-services ul li h3 {
+    color: #EEEEEE;
+    font-size: 1.6rem;
+    font-family: poppins;
+    font-weight: 500;
+}
+
+.my-services ul li p {
+    color: #707070;
+    font-size: 1.1rem;
+}
+
+.my-services li::before {
+    content: '';
+    transition: .5s ease-in-out;
+    border-radius: 6px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    border-top: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+
+.my-services li::after {
+    content: '';
+    transition: .5s ease-in-out;
+    border-radius: 6px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid transparent;   
+}
+
+.my-services li:hover::before {
+    width: 100%;
+    height: 100%;
+    border-top: 3px solid #D71313;
+    border-right: 3px solid #D71313;
+}
+
+.my-services li:hover::after {
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #D71313;
+    border-left: 3px solid #D71313;
 }
