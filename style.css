@@ -609,7 +609,7 @@ header i {
     }
 }
 
-@media (max-width: 1089px) {
+@media (max-width: 1395px) {
     .resume-generic .experience-content,.education-content {
         justify-self: center;
         grid-column: 1/-1;
@@ -653,6 +653,9 @@ header i {
         justify-self: center;
     }
 
+}
+
+@media (max-width: 900px ){
     .projects-data ul li{
         grid-column: 1/-1;
         max-width: 100%;
