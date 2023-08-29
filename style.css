@@ -8,6 +8,10 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #040404;
     max-width: 1400px;
@@ -138,19 +142,6 @@ header .navegacao-navbar li a:hover::after {
 
 /* section main */
 
-main{
-    background-color: #111;
-    color: #EEEEEE;
-}
-
-main .about-section {
-    margin-top: 60px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-    justify-content: center;
-    padding: 40px;
-}
 
 .about-title {
     margin: 30px 0;
@@ -187,76 +178,6 @@ main .about-section {
     background-color: #D71313;
 }
 
-.about-section img{
-    animation: sideSession .5s ease-in-out forwards;
-    cursor: pointer;
-    grid-row: 2;
-    max-width: 100%;
-    border-radius: 4px;
-    filter: blur(0);
-}
-
-.about-section img:hover {
-    transition: .5s ease-in;
-    filter: blur(2px);
-}
-
-.about-content {
-    animation: upSession .6s ease-in-out forwards ;
-    grid-column: 2/-1;
-    display: grid;
-    color: #EEEEEE;
-    grid-template-columns: 1fr 1fr;
-}
-
-.about-text {
-    display: grid;
-    grid-column: 1/-1;
-    grid-template-columns: 1fr 1fr;
-}
-
-.about-text h1{
-    font-size: 2.3rem;
-    color: #EEEEEE;
-    grid-column: 1/-1;
-}
-
-.about-text h1::after {
-    background-color: #D71313;
-    height: 6px;
-    width: 60px;
-    margin: 20px 0;
-    content: '';
-    display: block;
-    border-radius: 5px;
-}
-
-.about-text p{
-    font-size: 1.3rem;
-    grid-row: 2;
-    grid-column: 1/-1;
-}
-
-.about-info {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column: 1/-1;
-    gap: 15px;
-    align-items: center; 
-}
-
-.about-info i {
-    color: #D71313;
-    display: inline-block;
-    padding-right: 15px;
-    font-size: 1.5rem;
-}
-
-.about-info p {
-    font-size: 1.1rem;
-    color: #707070;
-}
 
 @keyframes upSession {
     from {
@@ -550,7 +471,7 @@ main .about-section {
 
 .skill-content {
     font-size: 1.5rem;
-    grid-column: 1/2;
+    grid-column: 3/-1;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
@@ -558,14 +479,17 @@ main .about-section {
 }
 
 .skill-content h3 {
+    color: #808080;
     font-size: 1.5rem;
-    justify-self: start;
+    background-color: #222;
+    border: 3px solid #444;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.skill-content ul {
-    display: flex;
-    gap: 2px;
-}
 
 /*FUN FACTS*/
 
@@ -605,6 +529,7 @@ main .about-section {
     width: 250px;
     height: 100px;
     display: grid;
+    cursor: pointer;
 }
 
 .funfacts ul li i {
@@ -719,15 +644,18 @@ header i {
     }
 
     .skill .my-skill h2 {
+        grid-column: 3/-1;
         justify-self: center;
     }
 
     .skill .my-skill {
-        
         text-align: center;
-        grid-template-columns: 1fr;
         justify-self: center;
-        grid-column: 1;
+    }
+
+    .projects-data ul li{
+        grid-column: 1/-1;
+        max-width: 100%;
     }
 }
 
@@ -789,6 +717,13 @@ header i {
     cursor: pointer;
 }
 
+/* @media (max-width: 1100px ) {
+    .projects-data ul {
+       max-width: 100%;
+       grid-row: ;
+    }
+} */
+
 .projects a {
     background-color: #222;
     text-decoration: none;
@@ -807,4 +742,56 @@ header i {
         opacity: 1;
         transform: translate3d(0, 0, 0);
     }
+}
+
+/*footer*/
+
+footer {
+    background-color: #111;
+    padding: 30px;
+}
+
+.footer-social {
+    display: flex;
+    color: #EEEEEE;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.footer-social li {
+    background-color: #333;
+    border-radius: 50%;
+    border: 1px solid #333;
+}
+
+.footer-social li i {
+    padding: 30px;
+    font-size: 1.5rem ;
+    color: #EEEEEE;
+}
+
+.footer-social li:hover {
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    background-color: #111;
+}
+
+.footer-social::before {
+    content: '';
+    height: 5px;
+    width: 200px;
+    position: absolute;
+    bottom: -30px;
+    background-color: #333;
+}
+
+footer .footer-comercial {
+    text-align: center;
+    color: #EEEEEE;
+    margin: 90px auto;
+    font-size: 1.3rem;
+    font-family: 'Poppins';
 }
