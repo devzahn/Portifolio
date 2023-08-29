@@ -567,10 +567,12 @@ header .navegacao-navbar li a:hover::after {
         background-size: cover;
 }
 
+
 header {
     justify-content: space-between;
     padding: 30px 70px;
 }
+
 
 header .navegacao-navbar {
     display: none;
@@ -659,6 +661,21 @@ header i {
     .projects-data ul li{
         grid-column: 1/-1;
         max-width: 100%;
+        width: auto;
+        height: 100px;
+    }
+    .projects-data ul li img {
+        width: auto;
+        height: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    .funfacts ul li{
+        grid-column: 1/-1;
+    }
+    .skill-content h3 {
+        grid-column: 1/-1;
     }
 }
 
